@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b49">
+  <meta name="description" content="Portal esportivo azul. Notícias, futebol e torcida.">
+  <title>Portal Azul | Notícias do Cruzeiro</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="top-strip">
+    <span>JÁ SOMOS <strong>67363</strong> SÓCIOS</span>
+    <span class="top-message">O futebol nos une. A paixão nos move.</span>
+  </div>
+
+  <header class="header">
+    <button class="icon-button" id="menuButton"
+      aria-label="Abrir menu" aria-expanded="false">
+      <span class="hamburger"><i></i><i></i><i></i></span>
+    </button>
+
+    <a href="#" class="brand" aria-label="Portal Azul, início">
+      <span class="brand-star">✦</span>
+      <span>PORTAL<span class="brand-light">AZUL</span></span>
+    </a>
+
+    <nav class="main-nav">
+      <a href="#noticias">NOTÍCIAS</a>
+      <a href="#jogos">JOGOS</a>
+      <a href="#clube">O CLUBE</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-link" href="#ingressos">▣ INGRESSOS</a>
+      <a class="header-link" href="#loja">♙ LOJA</a>
+      <a class="member-button" href="#socio">♧ SEJA SÓCIO</a>
+      <button class="profile-button" id="profileButton"
+        aria-label="Área do torcedor">♟</button>
+    </div>
+  </header>
+
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="side-menu" id="sideMenu" aria-hidden="true">
+    <div class="side-menu-top">
+      <span class="side-logo">PORTAL AZUL ✦</span>
+      <button id="closeMenu" class="close-button" aria-label="Fechar menu">✕</button>
+    </div>
+    <p class="side-caption">NAVEGUE PELO PORTAL</p>
+    <a href="#noticias">Notícias <span>→</span></a>
+    <a href="#jogos">Jogos e resultados <span>→</span></a>
+    <a href="#clube">Conheça o clube <span>→</span></a>
+    <a href="#socio">Seja sócio <span>→</span></a>
+    <a href="#ingressos">Ingressos <span>→</span></a>
+    <a href="#loja">Loja oficial <span>→</span></a>
+    <div class="side-footer">PAIXÃO QUE NÃO SE EXPLICA.</div>
+  </aside>
+
+  <main>
+    <section class="hero" id="noticias">
+      <div class="hero-background" id="heroBackground"></div>
+      <div class="hero-shade"></div>
+
+      <button class="slide-arrow prev" id="prevSlide"
+        aria-label="Notícia anterior">‹</button>
+      <button class="slide-arrow next" id="nextSlide"
+        aria-label="Próxima notícia">›</button>
+
+      <div class="hero-content">
+        <div class="news-meta">
+          <span class="category-pill" id="category">Base</span>
+          <span id="newsTime">há 15 horas</span>
+        </div>
+
+        <h1 id="heroTitle">
+          CRIAS DA TOCA CONQUISTAM GRANDES RESULTADOS CONTRA O
+          FLUMINENSE E CRAVAM A CLASSIFICAÇÃO PARA A SEMIFINAL DO
+          BRASILEIRÃO SUB-17
+        </h1>
+
+        <p class="hero-description" id="heroDescription">
+          Acompanhe as novidades, os resultados e as histórias
+          de quem veste a camisa azul.
+        </p>
+
+        <a href="#mais-noticias" class="read-button" id="readButton">
+          LER NOTÍCIA <span>→</span>
+        </a>
+
+        <div class="slide-dots" id="slideDots" aria-label="Selecionar notícia">
+          <button class="dot active" data-slide="0" aria-label="Notícia 1"></button>
+          <button class="dot" data-slide="1" aria-label="Notícia 2"></button>
+          <button class="dot" data-slide="2" aria-label="Notícia 3"></button>
+        </div>
+      </div>
+
+      <div class="hero-counter" id="heroCounter">01 / 03</div>
+    </section>
+
+    <section class="quick-links" id="clube">
+      <a class="quick-card" href="#socio">
+        <span class="quick-icon">♧</span>
+        <span><strong>SEJA SÓCIO</strong><small>Faça parte dessa história</small></span>
+        <span class="quick-arrow">↗</span>
+      </a>
+      <a class="quick-card" href="#ingressos">
+        <span class="quick-icon">▣</span>
+        <span><strong>INGRESSOS</strong><small>Vá apoiar o time</small></span>
+        <span class="quick-arrow">↗</span>
+      </a>
+      <a class="quick-card" href="#loja">
+        <span class="quick-icon">◇</span>
+        <span><strong>LOJA OFICIAL</strong><small>Vista nossas cores</small></span>
+        <span class="quick-arrow">↗</span>
+      </a>
+    </section>
+
+    <section class="news-section" id="mais-noticias">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">FIQUE POR DENTRO</span>
+          <h2>ÚLTIMAS NOTÍCIAS<span class="blue-dot">.</span></h2>
+        </div>
+        <a href="#noticias" class="see-all">VER DESTAQUES ↗</a>
+      </div>
+
+      <div class="news-grid">
+        <article class="news-card">
+          <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=900&q=85"
+            alt="Estádio de futebol durante uma partida" loading="lazy">
+          <div class="news-card-content">
+            <span class="card-category">FUTEBOL</span>
+            <h3>Paixão azul: a força da torcida dentro e fora de campo</h3>
+            <a href="#noticias">LER MAIS ↗</a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=900&q=85"
+            alt="Campo de futebol preparado para o jogo" loading="lazy">
+          <div class="news-card-content">
+            <span class="card-category">CLUBE</span>
+            <h3>Preparação, dedicação e trabalho rumo aos próximos desafios</h3>
+            <a href="#noticias">LER MAIS ↗</a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=900&q=85"
+            alt="Jogadores disputando uma partida de futebol" loading="lazy">
+          <div class="news-card-content">
+            <span class="card-category">BASE</span>
+            <h3>O futuro começa aqui: o talento das novas gerações</h3>
+            <a href="#noticias">LER MAIS ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="member-banner" id="socio">
+      <div>
+        <span class="eyebrow">NOSSA HISTÓRIA, NOSSA TORCIDA</span>
+        <h2>O AZUL É MAIS FORTE<br>QUANDO ESTAMOS JUNTOS.</h2>
+        <p>Faça parte da nossa história e viva o clube de perto.</p>
+      </div>
+      <a class="member-button banner-button" href="#clube">QUERO SER SÓCIO ↗</a>
+    </section>
+
+    <section class="simple-section" id="jogos">
+      <span class="eyebrow">AGENDA DO TORCEDOR</span>
+      <h2>PRÓXIMOS DESAFIOS<span class="blue-dot">.</span></h2>
+      <p>Consulte a agenda oficial do clube para acompanhar os próximos jogos.</p>
+      <a href="#clube" class="outline-button">ACOMPANHAR O CLUBE ↗</a>
+    </section>
+
+    <footer class="footer">
+      <a href="#" class="brand footer-brand">✦ PORTAL<span class="brand-light">AZUL</span></a>
+      <p>Uma homenagem à paixão pelo futebol.</p>
+      <span>Projeto demonstrativo independente — não é o site oficial do clube.</span>
+    </footer>
+  </main>
+
+  <button class="accessibility-button" id="accessibilityButton"
+    aria-label="Aumentar tamanho do texto">A+</button>
+
+  <button class="support-button" id="supportButton">
+    <span>◉</span> Atendimento
+  </button>
+
+  <dialog id="infoDialog" class="info-dialog">
+    <button class="dialog-close" id="dialogClose" aria-label="Fechar">✕</button>
+    <span class="eyebrow">PORTAL AZUL</span>
+    <h2 id="dialogTitle">Área do torcedor</h2>
+    <p id="dialogText">Esta é uma demonstração visual. Personalize os links para conectar seus serviços.</p>
+    <button class="member-button" id="dialogOk">ENTENDI</button>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
